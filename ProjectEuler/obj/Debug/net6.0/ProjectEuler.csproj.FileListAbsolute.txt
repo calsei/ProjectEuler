@@ -1,0 +1,15 @@
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\obj\Debug\net6.0\ProjectEuler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\obj\Debug\net6.0\ProjectEuler.AssemblyInfoInputs.cache
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\obj\Debug\net6.0\ProjectEuler.AssemblyInfo.cs
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\obj\Debug\net6.0\ProjectEuler.csproj.CoreCompileInputs.cache
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\bin\Debug\net6.0\ProjectEuler.exe
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\bin\Debug\net6.0\ProjectEuler.deps.json
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\bin\Debug\net6.0\ProjectEuler.runtimeconfig.json
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\bin\Debug\net6.0\ProjectEuler.dll
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\bin\Debug\net6.0\ref\ProjectEuler.dll
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\bin\Debug\net6.0\ProjectEuler.pdb
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\obj\Debug\net6.0\ProjectEuler.dll
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\obj\Debug\net6.0\ref\ProjectEuler.dll
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\obj\Debug\net6.0\ProjectEuler.pdb
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\obj\Debug\net6.0\ProjectEuler.genruntimeconfig.cache
+C:\Users\charl\source\repos\ProjectEuler\ProjectEuler\obj\Debug\net6.0\ProjectEuler.csproj.AssemblyReference.cache
