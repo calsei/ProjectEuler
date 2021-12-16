@@ -30,7 +30,7 @@ class Program
         //sw.Restart(); P020 p020 = new P020(); p020.Solve(100); sw.Stop(); Console.WriteLine($"\t\t\t\tTime elapsed: {sw.Elapsed}");
         //sw.Restart(); P021 p021 = new P021(); p021.Solve(10000); sw.Stop(); Console.WriteLine($"\t\t\t\tTime elapsed: {sw.Elapsed}");
         //sw.Restart(); P022 p022 = new P022(); p022.Solve(); sw.Stop(); Console.WriteLine($"\t\t\t\tTime elapsed: {sw.Elapsed}");
-        //sw.Restart(); P023 p023 = new P023(); p023.Solve(28123); sw.Stop(); Console.WriteLine($"\t\t\t\tTime elapsed: {sw.Elapsed}");
-        sw.Restart(); P024 p024 = new P024(); p024.Solve(); sw.Stop(); Console.WriteLine($"\t\t\t\tTime elapsed: {sw.Elapsed}");
+        sw.Restart(); P023 p023 = new P023(); p023.Solve(28123); sw.Stop(); Console.WriteLine($"\t\t\t\tTime elapsed: {sw.Elapsed}");
+        sw.Restart(); P024 p024 = new P024(); p024.Solve(1000000); sw.Stop(); Console.WriteLine($"\t\tTime elapsed: {sw.Elapsed}");
     }
 }

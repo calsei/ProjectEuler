@@ -9,39 +9,41 @@ namespace ProjectEuler
 {
     internal class P024
     {
-        int n = 1;
-        int level = 0;
+        ArrayList digits = new ArrayList() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        ArrayList currNum = new ArrayList() { };
+        int i = 0;
         public P024() { }
 
-        public void Solve()
+        public void Solve(int max)
         {
-            Permute(new int[] { 0, 1, 2 }, 0);
-        }
-
-        public void Permute(int[] arr, int index)
-        {
-            if (index == arr.Length - 1)
-                n++;
-
-            if (n == 4)
+            if (currNum.Count == 10)
             {
-                Console.Write($"024. Lexicographic permutations: ");
+                i++;
 
-                foreach (int a in arr)
-                    Console.Write(a);
-            }
+                if (i == max)
+                {
+                    Console.Write("024. Lexicographic permutations: ");
 
-            for (int i = index; i < arr.Length; i++)
+                    foreach (int digit in currNum)
+                        Console.Write(digit);
+                }
+
+            } 
+            else if (i != max)
             {
-                int[] newArr = arr;
-                int temp = newArr[index];
+                foreach (int digit in digits)
+                {
+                    if (i == max)
+                        break;
 
-                for (int j = index; j < i; j++)
-                    newArr[j] = newArr[j + 1];
-
-                newArr[i] = temp;
-
-                Permute(newArr, index + 1);
+                    if (!currNum.Contains(digit))
+                    {
+                        currNum.Add(digit);
+                        Solve(max);
+                        currNum.Remove(digit);
+                    }
+                        
+                }
             }
         }
     }
