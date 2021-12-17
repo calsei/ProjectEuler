@@ -99,5 +99,30 @@ namespace ProjectEuler
                     return right;
             }
         }
+
+        public static ArrayList DigitsArrayMult(ArrayList digitsArray, int factor)
+        {
+            int remaining = 0;
+
+            for (int j = 0; j < digitsArray.Count; j++)
+            {
+                digitsArray[j] = (int) digitsArray[j] * factor + remaining;
+                remaining = 0;
+
+                if ((int) digitsArray[j] / 10 != 0)
+                {
+                    remaining = (int) digitsArray[j] / 10;
+                    digitsArray[j] = (int) digitsArray[j] % 10;
+                }
+            }
+
+            while (remaining > 0)
+            {
+                digitsArray.Add(remaining % 10);
+                remaining /= 10;
+            }
+
+            return digitsArray;
+        }
     }
 }

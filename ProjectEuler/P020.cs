@@ -14,28 +14,9 @@ namespace ProjectEuler
         public void Solve(int num)
         {
             ArrayList digits = new ArrayList() { 1 };
-            int remaining = 0;
 
             for (int i = num; i > 0; i--)
-            {
-                for (int j = 0; j < digits.Count; j++)
-                {
-                    digits[j] = (int) digits[j] * i + remaining;
-                    remaining = 0;
-
-                    if ((int) digits[j] / 10 != 0)
-                    {
-                        remaining = (int) digits[j] / 10;
-                        digits[j] = (int) digits[j] % 10;
-                    }
-                }
-
-                while (remaining > 0)
-                {
-                    digits.Add(remaining % 10);
-                    remaining /= 10;
-                }
-            }
+                Utility.DigitsArrayMult(digits, i);
 
             int sum = 0;
 

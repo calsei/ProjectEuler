@@ -33,14 +33,14 @@ namespace ProjectEuler
             {
                 foreach (int digit in digits)
                 {
-                    if (i == max)
-                        break;
-
                     if (!currNum.Contains(digit))
                     {
                         currNum.Add(digit);
                         Solve(max);
                         currNum.Remove(digit);
+
+                        if (i == max)
+                            break;
                     }
                         
                 }

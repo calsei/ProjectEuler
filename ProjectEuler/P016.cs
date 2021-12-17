@@ -14,28 +14,9 @@ namespace ProjectEuler
         public void Solve(int power)
         {
             ArrayList digits = new ArrayList(); digits.Add(2);
-            int remaining = 0;
 
             for (int i = 0; i < power - 1; i++)
-            {
-                for (int j = 0; j < digits.Count; j++)
-                {
-                    digits[j] = 2 * (int) digits[j] + remaining;
-                    remaining = 0;
-
-                    if ((int) digits[j] / 10 > 0)
-                    {
-                        remaining = (int) digits[j] / 10;
-                        digits[j] = (int) digits[j] % 10;
-                    }
-                }
-
-                while (remaining > 0)
-                {
-                    digits.Add(remaining % 10);
-                    remaining /= 10;
-                }
-            }
+                Utility.DigitsArrayMult(digits, 2);
 
             int sum = 0;
 
